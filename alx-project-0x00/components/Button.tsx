@@ -17,7 +17,8 @@ const Button: React.FC<ButtonProps> = ({
   const shapeClasses = {
     "rounded-sm": "rounded-sm",
     "rounded-md": "rounded-md",
-     "rounded-full": "rounded-full"
+     "rounded-full": "rounded-full",
+     "rounded-lg": "rounded-lg"
   };
 
   const baseClasses =
