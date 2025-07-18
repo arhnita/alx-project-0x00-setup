@@ -2,6 +2,7 @@ import { ButtonProps } from "@/interfaces";
 
 const Button: React.FC<ButtonProps> = ({
   title,
+  styles,
   size = "medium",
   shape = "rounded-md",
   className = '',
@@ -16,13 +17,13 @@ const Button: React.FC<ButtonProps> = ({
   const shapeClasses = {
     "rounded-sm": "rounded-sm",
     "rounded-md": "rounded-md",
-    "rounded-lg": "rounded-lg",
+     "rounded-full": "rounded-full"
   };
 
   const baseClasses =
     "border bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors cursor-pointer";
 
-const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`;
+const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${className} ${styles}`;
 
   return (
     <button 
